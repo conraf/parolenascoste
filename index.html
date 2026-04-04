@@ -72,7 +72,7 @@
   .loading { text-align: center; padding: 2rem; color: var(--muted); }
   .spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.7s linear infinite; vertical-align: middle; margin-right: 8px; }
   @keyframes spin { to { transform: rotate(360deg); } }
-  footer { text-align: center; font-size: 0.78rem; color: var(--muted); margin-top: 2rem; }
+  footer { text-align: center; font-size: 0.78rem; color: var(--muted); margin-top: 2rem; line-height: 1.6; border-top: 1px solid var(--border); padding-top: 1.5rem; }
   #results { display: none; }
   #loading-screen { text-align: center; padding: 3rem 1rem; }
   #game-screen { display: none; }
@@ -116,7 +116,10 @@
 
     <p class="msg" id="msg"></p>
 
-    <footer>Morph-it! 0.4.8 · 370.915 forme morfologiche · gioco offline</footer>
+    <footer>
+      <p>Inserisci una parola italiana: il gioco trova tutte le parole di senso compiuto formabili usando solo le sue lettere — anagrammi completi e parole più corte contenute in essa. Clicca su una parola trovata per cercarne la definizione su Google.</p>
+      <p style="margin-top:0.5rem">Il dizionario (Morph-it! 0.4.8 · 370.915 forme) copre parole fino a 15 lettere. Le forme più lunghe — condizionali come <em>abbacchierebbero</em> o superlativi tecnici come <em>demoetnoantropologicissima</em> — sono così rare da non valere il peso aggiuntivo. Le parole contenute in un termine lungo vengono comunque trovate correttamente. L'input accetta fino a 30 lettere.</p>
+    </footer>
   </div>
 </div>
 
