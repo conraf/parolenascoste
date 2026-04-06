@@ -250,7 +250,7 @@ function renderChips(list){
   list.forEach(r=>{
     const c=document.createElement('a');
     c.className='chip '+(r.t==='c'?'cfull':'csub');
-    c.innerHTML=r.p+'<span class="clabel">'+r.l+'</span>';
+    c.innerHTML=r.p;
     c.href='https://www.google.com/search?q=definizione+'+encodeURIComponent(r.p);
     c.target='_blank';
     c.rel='noopener noreferrer';
